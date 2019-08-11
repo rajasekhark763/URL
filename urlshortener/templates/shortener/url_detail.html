@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'shortener/base.html'%}
+    {%block body_block%}
+      <h1 style="color:red;">WELCOME TO RAJASEKHAR WEBSITE</h1><br><br>
+      <h2 style="color:blue;"> This is the webpage for all the links</h2><br><br>
+
+
+
+      <a href="/update/{{url.id}}" class="btn btn-lg btn-warning">Update url</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="/delete/{{url.id}}" class="btn btn-lg btn-danger">Delete url</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <a href="/" class="btn btn-lg btn-primary" value="">Home</a>
+
+    {%endblock%}
